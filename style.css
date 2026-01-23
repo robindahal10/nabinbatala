@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.7;
+  }
+  
+  /* HERO */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #020617, #1e293b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+  }
+  
+  /* SECTIONS */
+  .card {
+    background: #020617;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+  
+  .card h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+  }
+  
+  /* PROFILE IMAGE */
+  .profile-img {
+    width: 220px;
+    height: auto;
+    border-radius: 16px;
+    margin: 20px 0;
+    border: 3px solid #38bdf8;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+  }
+  
