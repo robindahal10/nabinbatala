@@ -20,7 +20,7 @@ body.light {
   color: #020617;
 }
 
-/* NAV */
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
@@ -29,6 +29,7 @@ nav {
   position: sticky;
   top: 0;
   background: inherit;
+  z-index: 100;
 }
 
 nav ul {
@@ -58,6 +59,10 @@ nav a {
   text-align: center;
 }
 
+.hero h2 {
+  font-size: 2.5rem;
+}
+
 /* CARDS */
 .card {
   max-width: 800px;
@@ -65,9 +70,10 @@ nav a {
   padding: 40px;
   border-radius: 18px;
   background: rgba(255,255,255,0.05);
+  text-align: center;
 }
 
-/* IMAGE */
+/* PROFILE IMAGE */
 .profile-img {
   width: 220px;
   border-radius: 16px;
@@ -75,17 +81,28 @@ nav a {
   display: block;
 }
 
-/* SOCIAL */
-.socials {
+/* SOCIAL ICONS */
+.socials, .card a {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
 }
 
-/* ANIMATION */
+.social-logo {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s;
+}
+
+.social-logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ANIMATIONS */
 .fade {
-  animation: fadeIn 1.4s ease forwards;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -93,6 +110,7 @@ nav a {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
