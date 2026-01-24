@@ -292,3 +292,7 @@ footer {
     margin-top: 10px;
   }
 }
+.label::after {
+  content: ":";
+  margin-right: 8px;
+}
