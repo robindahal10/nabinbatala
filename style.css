@@ -237,4 +237,14 @@ footer {
 .value {
   color: #111;
 }
+.photo-row {
+  display: flex;
+  gap: 12px;
+}
+
+.photo-row img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
 
