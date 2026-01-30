@@ -8,11 +8,22 @@ toggle.addEventListener("click", () => {
 });
 <script>
   const slides = document.querySelectorAll(".slide");
-  let currentSlide = 0;
+  const next = document.querySelector(".next");
+  const prev = document.querySelector(".prev");
+  let index = 0;
 
-  setInterval(() => {
-    slides[currentSlide].classList.remove("active");
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add("active");
-  }, 3000); // change image every 3 seconds
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[i].classList.add("active");
+  }
+
+  next.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  });
+
+  prev.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  });
 </script>

@@ -161,4 +161,43 @@ footer {
 .profile-img {
   object-fit: cover;
 }
+/* MANUAL SLIDER */
+.slider {
+  position: relative;
+  width: 200px;
+  height: 260px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Buttons */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.nav:hover {
+  background: rgba(0,0,0,0.8);
+}
 
