@@ -200,4 +200,41 @@ footer {
 .nav:hover {
   background: rgba(0,0,0,0.8);
 }
+/* PROFILE CARD – CLEAN LOOK */
+.profile-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+/* DETAILS LAYOUT */
+.profile-details {
+  display: grid;
+  row-gap: 14px;
+}
+
+/* EACH ROW */
+.detail {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail:last-child {
+  border-bottom: none;
+}
+
+/* LABEL */
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+/* VALUE */
+.value {
+  color: #111;
+}
 
