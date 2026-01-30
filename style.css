@@ -129,3 +129,23 @@ footer {
     content: "";
   }
 }
+/* IMAGE SLIDER */
+.slider {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
