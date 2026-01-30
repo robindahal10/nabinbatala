@@ -148,4 +148,17 @@ footer {
   opacity: 1;
   position: relative;
 }
+/* FIX SLIDER HEIGHT */
+.slider {
+  position: relative;
+  width: 200px;
+  height: 260px; /* adjust if your image is taller */
+  overflow: hidden;
+}
+.profile-img {
+  width: 200px;
+}
+.profile-img {
+  object-fit: cover;
+}
 
