@@ -6,7 +6,7 @@ toggle.addEventListener("click", () => {
   body.classList.toggle("light");
   toggle.textContent = body.classList.contains("dark") ? "🌙" : "☀️";
 });
-<script>
+
   const slides = document.querySelectorAll(".slide");
   const next = document.querySelector(".next");
   const prev = document.querySelector(".prev");
@@ -26,4 +26,4 @@ toggle.addEventListener("click", () => {
     index = (index - 1 + slides.length) % slides.length;
     showSlide(index);
   });
-</script>
+
